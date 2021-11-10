@@ -21,6 +21,11 @@ public class HackHers_Lib {
         backRight.setPower(br);
     }
 
+    public void omniDrive(float v, float h, float r){
+        float[] sum = PaulMath.omniCalc(v, h, r);
+        driveRaw(sum[0], sum[1], sum[2], sum[3]);
+    }
+
 
 }
 

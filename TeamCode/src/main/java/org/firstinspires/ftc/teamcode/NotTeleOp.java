@@ -16,9 +16,8 @@ public class NotTeleOp extends OpMode {
         DcMotor fR = hardwareMap.get(DcMotor.class, "fR");
         DcMotor bL = hardwareMap.get(DcMotor.class, "bl");
         DcMotor bR = hardwareMap.get(DcMotor.class, "bR");
-        DcMotor dw = hardwareMap.get(DcMotor.class, "dw");
 
-        everything = new HackHers_Lib(fL, fR, bL, bR, dw);
+        everything = new HackHers_Lib(fL, fR, bL, bR);
     }
 
     @Override

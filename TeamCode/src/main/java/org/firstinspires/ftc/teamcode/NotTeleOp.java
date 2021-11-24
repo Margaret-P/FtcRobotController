@@ -16,13 +16,8 @@ public class NotTeleOp extends OpMode {
         DcMotor fR = hardwareMap.get(DcMotor.class, "fR");
         DcMotor bL = hardwareMap.get(DcMotor.class, "bl");
         DcMotor bR = hardwareMap.get(DcMotor.class, "bR");
+        DcMotor dw = hardwareMap.get(DcMotor.class, "dw");
 
-        everything = new HackHers_Lib(fL, fR, bL, bR);
+        everything = new HackHers_Lib(fL, fR, bL, bR, dw);
     }
-
-    @Override
-    public void loop() {
-        everything.omniDrive(gamepad1.right_stick_y, gamepad1.left_stick_x, gamepad1.right_stick_x);
-    }
-
 }

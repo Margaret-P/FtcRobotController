@@ -10,18 +10,18 @@ public class HackHers_Lib {
     public DcMotor duckWheel;
 
     public HackHers_Lib(DcMotor fl, DcMotor fr, DcMotor bl, DcMotor br, DcMotor dw){
-        this.frontLeft= fl;
-        this.frontRight = fr;
-        this.backLeft= bl;
-        this.backRight  = br;
-        this.duckWheel = dw;
-    }
+            this.frontLeft= fl;
+            this.frontRight = fr;
+            this.backLeft= bl;
+            this.backRight = br;
+            this.duckWheel = dw;
+        }
 
-    public void driveRaw(float fl, float fr, float bl, float br){
-        frontLeft.setPower(fl);
-        frontRight.setPower(fr);
-        backLeft.setPower(bl);
-        backRight.setPower(br);
+        public void driveRaw(float fl, float fr, float bl, float br){
+            frontLeft.setPower(fl);
+            frontRight.setPower(fr);
+            backLeft.setPower(bl);
+            backRight.setPower(br);
     }
 
     public void omniDrive(float v, float h, float r){

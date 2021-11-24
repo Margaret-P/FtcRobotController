@@ -7,7 +7,7 @@ import com.qualcomm.robotcore.hardware.DcMotor;
 
 
 @com.qualcomm.robotcore.eventloop.opmode.TeleOp
-public class NotTeleOp extends OpMode {
+public abstract class NotTeleOp extends OpMode {
     private HackHers_Lib everything;
 
 

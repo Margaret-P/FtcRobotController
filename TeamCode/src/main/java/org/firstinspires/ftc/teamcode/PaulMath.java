@@ -20,7 +20,7 @@ public class PaulMath {
 
         if(greatest>1){
             for(int i = 0; i<4; i++){
-               sum[i] = sum[i]/greatest;
+                sum[i] = sum[i]/greatest;
             }
         }
         return sum;

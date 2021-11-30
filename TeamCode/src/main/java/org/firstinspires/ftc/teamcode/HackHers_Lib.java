@@ -23,6 +23,9 @@ public class HackHers_Lib {
             backLeft.setPower(bl);
             backRight.setPower(br);
     }
+    public void setMotorPower(DcMotor motor, float power){
+        motor.setPower(power);
+    }
 
     public void omniDrive(float v, float h, float r){
         float[] sum = PaulMath.omniCalc(v, h, r);
